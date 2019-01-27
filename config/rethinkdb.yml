@@ -1,0 +1,6 @@
+access:
+  user: "admin"
+  pass: "TTy637&$!=kjhj9878"
+  host: "localhost"
+  port: "28015"
+  db: "treasury_development"

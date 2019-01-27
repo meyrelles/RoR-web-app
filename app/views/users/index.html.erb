@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<h1>Users</h1>
+
+<body class='users_body' id="Usersbody">
+  <div>
+    <div>
+      <table id="users" class="display" style="text-align: left; width: 100%;" data-source="<%= users_url(format: "json") %>">
+        <thead>
+          <tr>
+            <th>Details</th>
+            <th>Username</th>
+            <th>Nickname</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <br>
+
+      <%= link_to 'New User', new_user_path, class: "btn btn-lg btn-primary" %>
+
+    </div>
+  </div>
+</body>

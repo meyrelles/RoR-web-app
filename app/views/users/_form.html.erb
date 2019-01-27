@@ -1,0 +1,122 @@
+<%= form_with(model: user, local: true, url: signup_path) do |form| %>
+  <% if user.errors.any? %>
+  <%= render 'shared/error_messages' %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username, class: 'form-control' %>
+  </div>
+
+  <% if @kind == 'new' %>
+    <div class="field">
+      <%= form.label :password %>
+      <%= form.password_field  :password_digest, class: 'form-control' %>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :surname %>
+    <%= form.text_field :surname, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :givenname %>
+    <%= form.text_field :givenname, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nickname %>
+    <%= form.text_field :nickname, class: 'form-control' %>
+  </div>
+
+<!--
+  <div class="field">
+    <%= form.label :'Birthdate and Time' %>
+    <%= form.datetime_select :birthdate_time, :start_year => 1900, class: 'form-control-datetime' %>
+  </div>
+-->
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label "#{:kind} of user" %>
+    <%= form.select :group, ['', 'Member','Team','World'], class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label "User #{:status}" %>
+    <%= form.select :status, ['Active','Inactive'], class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label "User #{:profile}" %>
+    <%= form.collection_select :profile, @profile, :id, :group_name, include_blank: true %>
+  </div>
+
+<!--
+  <div class="field">
+    %= form.label :spreadsheet_link %>
+    %= form.text_field :spreadsheet_link, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    %= form.label :sheet_name %>
+    %= form.text_field :sheet_name, class: 'form-control' %>
+  </div>
+-->
+  <% if @kind != 'new' %>
+    <%= form.hidden_field :id, value: params[:id].to_s %>
+  <% else %>
+    <%= form.hidden_field :id, value: @user.id %>
+  <% end %>
+
+  <% if session[:admin].to_s == "[true]" and session[:user_id] != '' %>
+    <table class="user_administrator" border="0">
+      <div class="Boolean_Class">
+        <tr>
+          <td><%= form.label 'User Verified?', class: 'Check_Boolean_Class' %></td>
+          <td><span style="display:inline-block; width: 10px;"></span></td>
+          <td><%= form.check_box :verified, class: 'Label_Boolean_Class' %></td>
+        </tr>
+        <tr>
+          <td><span style="display:block; height: 10px;"></span></td>
+        </tr>
+      </div>
+
+      <div class="Boolean_Class">
+        <tr>
+          <td><%= form.label "Administrator?", class: 'Label_Boolean_Class' %></td>
+          <td></td>
+          <td><%= form.check_box :admin, class: 'Check_Boolean_Class' %></td>
+        </tr>
+        <tr>
+          <td><span style="display:block; height: 10px;"></span></td>
+        </tr>
+      </div>
+    </table>
+  <% end %>
+
+  <table>
+      <div class="actions">
+        <tr>
+          <td><%= form.submit "Submit", class: "btn btn-lg btn-primary", data: { disable_with: "Please wait.." }  %></td>
+          <% if session[:admin].to_s == '[true]' %>
+            <td><%= link_to 'Back', users_path, class: "btn btn-lg btn-primary" %></td>
+          <% end %>
+        </tr>
+      </div>
+  </table>
+<% end %>

@@ -1,0 +1,135 @@
+<body class="body_<%= @tr_statement.mov_type.to_s %>">
+<p id="notice"><%= notice %></p>
+
+<% if @tr_statement.mov_type == 'tr' %>
+  <h3>Transaction details</h3>
+<% elsif @tr_statement.mov_type == 'exch' %>
+  <h3>Exchange details</h3>
+<% end %>
+<br>
+<table>
+<tr>
+<p>
+  <td><strong>Date:</strong></td>
+  <td><%= @tr_statement.date_time.to_s[0..10] %></td>
+</p>
+</tr>
+
+<!--
+<p>
+  <strong>Time zone:</strong>
+  <%= @tr_statement.timezone %>
+</p>
+-->
+
+<tr>
+<p>
+  <td><strong>Detail:</strong></td>
+  <td><%= @tr_statement.detail %></td>
+</p>
+</tr>
+
+<tr>
+<p>
+  <td><strong>Category:</strong></td>
+  <% begin %>
+    <td><%= Classification.where(id: @tr_statement.classification.to_s).map(&:classification)*"," %></td>
+  <% rescue Exception => e %>
+  <% end %>
+</p>
+</tr>
+
+<tr>
+<p>
+  <td><strong>From:</strong></td>
+  <% begin %>
+    <td><%= User.where(id: @tr_statement.from).map(&:nickname)*"," %></td>
+  <% rescue%>
+  <% end %>
+</p>
+</tr>
+
+<tr>
+<p>
+  <td><strong>From coinbag:</strong></td>
+  <% if @tr_statement.coinbag != nil %>
+    <td><%= Coinbag.where(id: @tr_statement.coinbag).map(&:coinbag)*"," %></td>
+  <% end %>
+</p>
+</tr>
+
+<tr>
+<p>
+  <td><strong>To:</strong></td>
+  <% begin %>
+    <td><%= User.where(id: @tr_statement.to).map(&:nickname)*"," %></td>
+  <% rescue%>
+  <% end %>
+</p>
+</tr>
+
+<tr>
+<p>
+  <td><strong>To coinbag:</strong></td>
+  <% if @tr_statement.coinbag_dest != nil %>
+    <td><%= Coinbag.where(id: @tr_statement.coinbag_dest).map(&:coinbag)*"," %></td>
+  <% end %>
+</p>
+</tr>
+
+<tr>
+<p>
+  <td><strong>Currency:</strong></td>
+  <td><%= Currency.where(id: @tr_statement.currency).map(&:currency)*"," %></td>
+</p>
+</tr>
+
+<tr>
+<p>
+  <td><strong>Amount:</strong></td>
+  <td><%= @tr_statement.amount %></td>
+</p>
+</tr>
+
+<tr>
+<p>
+  <td><strong>Celebrate:</strong></td>
+  <td><%= @tr_statement.celebrate %></td>
+</p>
+</tr>
+
+<tr>
+<p>
+  <td><strong>Created at:</strong></td>
+  <td><%= @tr_statement.created_at %></td>
+</p>
+</tr>
+<br>
+</table>
+<br>
+<% if params[:type] != 'approvals' %>
+  <% if @tr_statement.from == nil && @tr_statement.created_by == session[:user_id] %>
+    <td><%= link_to 'Edit', edit_tr_statement_path(@tr_statement, :type => @tr_statement.mov_type, :usr => ''), class: "btn btn-lg btn-primary" %></td> |
+  <% else %>
+    <% if @tr_statement.mov_type == 'tr' && @tr_statement.created_by == session[:user_id] %>
+      <td><%= link_to 'Edit', edit_tr_statement_path(@tr_statement, :type => @tr_statement.mov_type, :usr => User.where(id: @tr_statement.to).map(&:id)*","), class: "btn btn-lg btn-primary" %></td> |
+    <% elsif @tr_statement.created_by == session[:user_id]  %>
+      <td><%= link_to 'Edit', edit_tr_statement_path(@tr_statement, :type => @tr_statement.mov_type, :usr => User.where(id: @tr_statement.from).map(&:id)*","), class: "btn btn-lg btn-primary" %></td> |
+    <% end %>
+  <% end %>
+<% end %>
+<% if params[:type] == 'approvals' %>
+  <table>
+    <tr>
+      <td><INPUT TYPE="button" VALUE="Back" class="btn btn-lg btn-primary" OnClick="history.go( -1 );return true;"></td>
+    </tr>
+  </table>
+<% else %>
+  <td><%= link_to 'Back', tr_statements_path, class: "btn btn-lg btn-primary" %></td> |
+  <% if @tr_statement.mov_type == 'tr' %>
+    <td><%= link_to 'New', new_tr_statement_path(@tr_statement, :type => "tr"), id: "new_tr", class: "btn btn-lg btn-primary" %></td>
+  <% else %>
+    <td><%= link_to 'New', new_tr_statement_path(@tr_statement, :type => "exch"), id: "new_exch", class: "btn btn-lg btn-primary" %></td>
+  <% end %>
+<% end %>
+</body>
