@@ -1,0 +1,64 @@
+<%= form_with(model: currency, local: true) do |form| %>
+  <% if currency.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(currency.errors.count, "error") %> prohibited this currency from being saved:</h2>
+
+      <ul>
+      <% currency.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <table class="st_input" border="0">
+    <div class="field">
+      <tr>
+        <td><%= form.label :currency %></td>
+        <td><%= form.text_field :currency %></td>
+      </tr>
+      <% if session[:admin].to_s != "[true]" %>
+        <tr>
+          <td><%= form.label 'Exchange Symbol' %></td>
+          <td><%= form.text_field :exch_symbol, :disabled => true %></td>
+        </tr>
+        <tr>
+          <td><%= form.label 'Exchange Name' %></td>
+          <td><%= form.text_field :exch_name, :disabled => true %></td>
+        </tr>
+        <tr>
+          <td><%= form.label 'Exchange Rate' %></td>
+          <td><%= form.text_field :exch_rate, :disabled => true %></td>
+        </tr>
+        <tr>
+          <td><%= form.label 'Kind of currency' %></td>
+          <td><%= form.text_field :cur_type, :disabled => true %></td>
+        </tr>
+    <% else %>
+        <tr>
+          <td><%= form.label 'Exchange Symbol' %></td>
+          <td><%= form.text_field :exch_symbol %></td>
+        </tr>
+        <tr>
+          <td><%= form.label 'Exchange Name' %></td>
+          <td><%= form.text_field :exch_name %></td>
+        </tr>
+        <tr>
+          <td><%= form.label 'Exchange Rate' %></td>
+          <td><%= form.text_field :exch_rate %></td>
+        </tr>
+        <tr>
+          <td><%= form.label 'Kind of currency' %></td>
+          <td><%= form.text_field :cur_type %></td>
+        </tr>
+    <% end %>
+    </div>
+
+    <div class="actions">
+      <tr>
+        <td><%= form.submit 'Submit', name: 'send', id: 'send', class: "btn btn-lg btn-primary", data: { disable_with: "Please wait.." } %></td>
+        <td><%= link_to 'Back', currencies_path, class: "btn btn-lg btn-primary" %></td>
+      </tr>
+    </div>
+  </table>
+<% end %>

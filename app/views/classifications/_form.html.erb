@@ -1,0 +1,29 @@
+<%= form_with(model: classification, local: true) do |form| %>
+  <% if classification.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(classification.errors.count, "error") %> prohibited this classification from being saved:</h2>
+
+      <ul>
+      <% classification.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <table class="st_input" border="0">
+    <div class="field">
+      <tr>
+        <td><%= form.label "Category" %></td>
+        <td><%= form.text_field :classification %></td>
+      </tr>
+    </div>
+
+    <div class="actions">
+      <tr>
+        <td><%= form.submit 'Submit', name: 'send', id: 'send', class: "btn btn-lg btn-primary", data: { disable_with: "Please wait.." } %></td>
+        <td><%= link_to 'Back', classifications_path, class: "btn btn-lg btn-primary" %></td>
+      </tr>
+    </div>
+  </table>
+<% end %>

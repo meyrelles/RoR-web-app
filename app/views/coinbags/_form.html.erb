@@ -1,0 +1,45 @@
+<%= form_with(model: @coinbag, local: true) do |form| %>
+  <% if @coinbag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@coinbag.errors.count, "error") %> prohibited this coinbag from being saved:</h2>
+
+      <ul>
+      <% @coinbag.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <table class="st_input" border="0">
+    <div class="field">
+      <tr>
+        <td><%= form.label :coinbag %></td>
+        <td><%= form.text_field :coinbag %></td>
+      </tr>
+    </div>
+
+    <% if session[:admin] == [true] %>
+      <div class="field">
+        <tr>
+          <td><%= form.label "User" %></td>
+          <% if @type == 'NEW' %>
+            <td><%= form.collection_select :user_id, User.all, :id, :username, selected: session[:user_id] %>
+          <% else %>
+            <td><%= form.collection_select :user_id, User.all, :id, :username %>
+          <% end %>
+          <div id="CTR_coinbag_dest" class="CTR_form"><%= @action == 'NEW' && '*' || '' %></div></td>
+        </tr>
+      </div>
+    <% else %>
+      <td><%= form.hidden_field :user_id, :value => session[:user_id] %></td>
+    <% end %>
+
+    <div class="actions">
+      <tr>
+        <td><%= form.submit "Submit", class: "btn btn-lg btn-primary", data: { disable_with: "Please wait.." } %></td>
+        <td><%= link_to 'Back', coinbags_path, class: "btn btn-lg btn-primary" %></td>
+      </tr>
+    </div>
+  </table>
+<% end %>

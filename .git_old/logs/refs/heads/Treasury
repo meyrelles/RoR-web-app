@@ -1,0 +1,103 @@
+0000000000000000000000000000000000000000 7edeb1e9f560d383aff5a9ee9779c03f497e235a Meyrelles <nuno.de.meireles@gmail.com> 1524699094 +0100	branch: Created from HEAD
+7edeb1e9f560d383aff5a9ee9779c03f497e235a b7a055f24fdec20f327e964acc74ab041716e411 Meyrelles <nuno.de.meireles@gmail.com> 1524699620 +0100	commit: Just for test
+b7a055f24fdec20f327e964acc74ab041716e411 6cdaa61525d1dc8467634ef639d5df6bc7e849dd Meyrelles <nuno.de.meireles@gmail.com> 1524700088 +0100	commit: Return label description1 to description
+6cdaa61525d1dc8467634ef639d5df6bc7e849dd ba42ca0d7de309c77b961e468cdc5100a4d432d2 Meyrelles <nuno.de.meireles@gmail.com> 1524711884 +0100	commit: Testing Atom editor
+ba42ca0d7de309c77b961e468cdc5100a4d432d2 b46b761f0df600b09e87c2b821e36069c829a910 Meyrelles <nuno.de.meireles@gmail.com> 1524711938 +0100	commit (amend): Testing Atom editor
+b46b761f0df600b09e87c2b821e36069c829a910 6364065818b2e42cf1d2f9032a2c5e69fb2cbc9f Meyrelles <nuno.de.meireles@gmail.com> 1524711966 +0100	commit: Testing Atom editor
+6364065818b2e42cf1d2f9032a2c5e69fb2cbc9f fc521f5737ab589384e21592ee6bf589dae9ba2a Meyrelles <nuno.de.meireles@gmail.com> 1524759977 +0100	commit: Add gem to google_drive
+fc521f5737ab589384e21592ee6bf589dae9ba2a f62c66976bc0baa0479a6c1e96efab3a68a73d84 Meyrelles <nuno.de.meireles@gmail.com> 1524760034 +0100	commit: - Update gem versions
+f62c66976bc0baa0479a6c1e96efab3a68a73d84 aba9ba7a0c55b86eab2cabdfcaccdf325e02cdb8 Meyrelles <nuno.de.meireles@gmail.com> 1524760118 +0100	commit: - Add require file to google_synch file;
+aba9ba7a0c55b86eab2cabdfcaccdf325e02cdb8 ae332b5d4abc745dd91ce7639e0a6e7e2ce9b346 Meyrelles <nuno.de.meireles@gmail.com> 1524760217 +0100	commit: Add google API json to connect to Coinlog spreadsheets - needs to add the emails address cryptomania@cryptomania-195618.iam.gserviceaccount.com to the coinlogs spreadsheet to permit the synchronization.
+ae332b5d4abc745dd91ce7639e0a6e7e2ce9b346 fe626b4f5017ce09a397e93d4d269fd97c49385e Meyrelles <nuno.de.meireles@gmail.com> 1524760274 +0100	commit: Google API JSON file to do the Coinlog synchronization do RethinkDB
+fe626b4f5017ce09a397e93d4d269fd97c49385e 29efc7d358381b4edb85a84e73aa8ded1d613472 Meyrelles <nuno.de.meireles@gmail.com> 1524760319 +0100	commit: Class to connect to google spreadsheet.
+29efc7d358381b4edb85a84e73aa8ded1d613472 84216b3b88002a11210f132448475f4a2eb6e4aa Meyrelles <nuno.de.meireles@gmail.com> 1524780674 +0100	commit: Rename file to google_synch2
+84216b3b88002a11210f132448475f4a2eb6e4aa ae254dad6dfa7254ba07504a915461ad2c508bf1 Meyrelles <nuno.de.meireles@gmail.com> 1524780726 +0100	commit: Update the webpage users Show to implement the error rescue
+ae254dad6dfa7254ba07504a915461ad2c508bf1 1211e70dee9c34898c69f409e341c988b3d2ea10 Meyrelles <nuno.de.meireles@gmail.com> 1524780816 +0100	commit: Insert new user field in new/update user form to have a field with a google worksheet name, because all Veda members have a diferent name for transactions.
+1211e70dee9c34898c69f409e341c988b3d2ea10 83c858e0110071b2442d1684a71fe912dc86a3fc Meyrelles <nuno.de.meireles@gmail.com> 1524780845 +0100	commit: Add new field sheet_name to the users table
+83c858e0110071b2442d1684a71fe912dc86a3fc 6c9a39ecb3351de79ff0ccb0fba1a4867512456d Meyrelles <nuno.de.meireles@gmail.com> 1524780884 +0100	commit: Changed name to google_synch2.rb
+6c9a39ecb3351de79ff0ccb0fba1a4867512456d 6e213433ff624f5c3dc435ab918a148d97746f00 Meyrelles <nuno.de.meireles@gmail.com> 1524780969 +0100	commit: Update the controller to call google spreadsheet in show mode, will be used to synchronize the spreadsheets to RethinkDB.
+6e213433ff624f5c3dc435ab918a148d97746f00 c0123cf0b3e27f3b4102a0dfbe6cf2af1e41191b Meyrelles <nuno.de.meireles@gmail.com> 1524781135 +0100	commit: Update user controller file to get data from google spreadsheet.
+c0123cf0b3e27f3b4102a0dfbe6cf2af1e41191b 028d01107e5fb173b4c2c660a10244b54e212a44 Meyrelles <nuno.de.meireles@gmail.com> 1524785476 +0100	commit: Change the controller to access the google spreadsheet by sheet name.
+028d01107e5fb173b4c2c660a10244b54e212a44 735c42554068073903a8e1c47bdbdf41d8478903 Meyrelles <nuno.de.meireles@gmail.com> 1524785650 +0100	pull GITHUB Treasury: Merge made by the 'recursive' strategy.
+735c42554068073903a8e1c47bdbdf41d8478903 c2def3f138611ee5d6ec3ef63b84dfea1b5d5464 Meyrelles <nuno.de.meireles@gmail.com> 1524880416 +0100	commit: Inserted a Javascript function to desable the user field in transaction form to avoid errors.
+c2def3f138611ee5d6ec3ef63b84dfea1b5d5464 ab6b7166f49e9be47d468531ca344dbe4d696326 Meyrelles <nuno.de.meireles@gmail.com> 1524880483 +0100	commit: Put a url parameter to push a variable to edit form.
+ab6b7166f49e9be47d468531ca344dbe4d696326 c635744c7ccac2a104726d8cb61097f3cd579633 Meyrelles <nuno.de.meireles@gmail.com> 1524880542 +0100	commit: Pass as URL parameter the transaction type of transaction.
+c635744c7ccac2a104726d8cb61097f3cd579633 fac76bd1804094b45772b8c3eb1c5c7f8009e615 Meyrelles <nuno.de.meireles@gmail.com> 1524880600 +0100	commit: Remove the radio options in top of form and put the option in the transaction index.
+fac76bd1804094b45772b8c3eb1c5c7f8009e615 e4d078715bfe80d46788f7534eb4fc369435962a Meyrelles <nuno.de.meireles@gmail.com> 1524880643 +0100	commit: Organization
+e4d078715bfe80d46788f7534eb4fc369435962a 5ac319a6c45b6212f6e03392612d465a5970dd0e Meyrelles <nuno.de.meireles@gmail.com> 1524914477 +0100	commit: deleted
+5ac319a6c45b6212f6e03392612d465a5970dd0e 9b9fb0173513d5654dae9320b20d4baf66650c2f Meyrelles <nuno.de.meireles@gmail.com> 1524918016 +0100	commit: Change the JSON file path
+9b9fb0173513d5654dae9320b20d4baf66650c2f 619a9b6f39f0b6521dcc2558e5799983143d3212 Meyrelles <nuno.de.meireles@gmail.com> 1524952735 +0100	commit: Add gem's to project (sass, coffee-script, jquery-rails and jquery-turbolinks)
+619a9b6f39f0b6521dcc2558e5799983143d3212 f0f896bd0d950dabd18d11df5c0d73078729e6f3 Meyrelles <nuno.de.meireles@gmail.com> 1524953088 +0100	commit: Remove order resources
+f0f896bd0d950dabd18d11df5c0d73078729e6f3 23e0c454451195858a43312100878daf3a17b193 Meyrelles <nuno.de.meireles@gmail.com> 1525007222 +0100	commit: Exchange the reason process by classifcation to classify the treasury transactions.
+23e0c454451195858a43312100878daf3a17b193 33074034ceb88b75e3a0b9664cfe52f178ffa3d5 Meyrelles <nuno.de.meireles@gmail.com> 1525007331 +0100	commit: Exchange the field description by classification to classify the transaction
+33074034ceb88b75e3a0b9664cfe52f178ffa3d5 582b9a5a5c5120adb42da72952822eb2a90f3a6e Meyrelles <nuno.de.meireles@gmail.com> 1525025015 +0100	commit: Code optimization
+582b9a5a5c5120adb42da72952822eb2a90f3a6e cae0a2928262feaadb57fadbd448af3f606251f4 Meyrelles <nuno.de.meireles@gmail.com> 1525025140 +0100	commit: Exchange transaction process
+cae0a2928262feaadb57fadbd448af3f606251f4 42224113ad5d53f5d6a83a88148e30150d03ff64 Meyrelles <nuno.de.meireles@gmail.com> 1525034280 +0100	pull GITHUB Treasury: Fast-forward
+42224113ad5d53f5d6a83a88148e30150d03ff64 33402f7517a972d93231d4f156a9603905a8c90f Meyrelles <nuno.de.meireles@gmail.com> 1525046936 +0100	commit: Inserted function to update the exchange record.
+33402f7517a972d93231d4f156a9603905a8c90f 3750a17a9da039236afe1fea30dc62ddb56afd71 Meyrelles <nuno.de.meireles@gmail.com> 1525134145 +0100	commit: Transaction form validations
+3750a17a9da039236afe1fea30dc62ddb56afd71 1ff1334e98b31c001f790bf0230119f7bd5770ac Meyrelles <nuno.de.meireles@gmail.com> 1525285840 +0100	commit: Add bcrypt and encrypt user password to project
+1ff1334e98b31c001f790bf0230119f7bd5770ac 22855c239e3c73affb1a9f7526fcacc350f7f638 Meyrelles <nuno.de.meireles@gmail.com> 1525285864 +0100	commit: User session control
+22855c239e3c73affb1a9f7526fcacc350f7f638 4d75579171ead2a3b1136340786838d56fcb46fc Meyrelles <nuno.de.meireles@gmail.com> 1525441842 +0100	commit: Correct the delete record and control user session.
+4d75579171ead2a3b1136340786838d56fcb46fc dcef9411bd59fb57635d28f4aaafb20cd601be6e Meyrelles <nuno.de.meireles@gmail.com> 1525441870 +0100	commit: User session app control
+dcef9411bd59fb57635d28f4aaafb20cd601be6e 6eae6302a20b51bd6d0dcad68adbcb06264f8f60 Meyrelles <nuno.de.meireles@gmail.com> 1525524180 +0100	commit: Session control
+6eae6302a20b51bd6d0dcad68adbcb06264f8f60 bb8797f0bc60452649e358cf22b5b5f87c6deaf3 Meyrelles <nuno.de.meireles@gmail.com> 1525548969 +0100	commit: Introduce modal form to insert and update new coinbag, currency and classification
+bb8797f0bc60452649e358cf22b5b5f87c6deaf3 a49b35643536ccfebe7cf362089650b28835ac09 Meyrelles <nuno.de.meireles@gmail.com> 1528842959 +0100	commit: Update to operate in single transsaction
+a49b35643536ccfebe7cf362089650b28835ac09 19421ae4c937485a4dcd79022c0c92a1c2c2c504 Meyrelles <nuno.de.meireles@gmail.com> 1529012126 +0100	commit: Dynamic combobox
+19421ae4c937485a4dcd79022c0c92a1c2c2c504 0b1427bfb068f6cb451bb54c7f769fb9cd611916 Meyrelles <nuno.de.meireles@gmail.com> 1529012470 +0100	commit: Dynamic combobox
+0b1427bfb068f6cb451bb54c7f769fb9cd611916 c2e70a911a2e3a618f78fcfb0bf3db52a2988c45 Meyrelles <nuno.de.meireles@gmail.com> 1529172135 +0100	commit: User login and sessions control
+c2e70a911a2e3a618f78fcfb0bf3db52a2988c45 b2c4648f9c67ad2cb2781b19aba41796891d4c81 Meyrelles <nuno.de.meireles@gmail.com> 1529197861 +0100	commit: User access control
+b2c4648f9c67ad2cb2781b19aba41796891d4c81 f3a464fc0c33f6de0ca57bd2afc55fd3c7888b12 Meyrelles <nuno.de.meireles@gmail.com> 1529199420 +0100	commit: User control
+f3a464fc0c33f6de0ca57bd2afc55fd3c7888b12 ba96f85d21a47ed9cee73e23150a273bdd179d67 Meyrelles <nuno.de.meireles@gmail.com> 1529328975 +0100	commit: List coinbag username
+ba96f85d21a47ed9cee73e23150a273bdd179d67 7776f67eb4ae015255aba7bcb5a8c7b843f72977 Meyrelles <nuno.de.meireles@gmail.com> 1529424813 +0100	commit: List coinbag per username
+7776f67eb4ae015255aba7bcb5a8c7b843f72977 c014883e0355d5291bb4906bfe79bf5da78bbf2c Meyrelles <nuno.de.meireles@gmail.com> 1529424856 +0100	commit: Transactions validation
+c014883e0355d5291bb4906bfe79bf5da78bbf2c c083069101c397922d5efcf7796104511fff7bed Meyrelles <nuno.de.meireles@gmail.com> 1529486878 +0100	commit: Apply CSS to all modules
+c083069101c397922d5efcf7796104511fff7bed e1f10e76ec35e27bd7f2bf00623e407cd5cd5e04 Meyrelles <nuno.de.meireles@gmail.com> 1529503336 +0100	commit: Welcome email setup
+e1f10e76ec35e27bd7f2bf00623e407cd5cd5e04 2dfff6587d1ed07ea2e2be97abce2ffa9be5b183 Meyrelles <nuno.de.meireles@gmail.com> 1529507175 +0100	commit: Coinbag error whe it's blank
+2dfff6587d1ed07ea2e2be97abce2ffa9be5b183 e8cb79966b6489b83cd424aae682a0ef80223e00 Meyrelles <nuno.de.meireles@gmail.com> 1529528192 +0100	commit: Password controll and reset
+e8cb79966b6489b83cd424aae682a0ef80223e00 ddc5bbbac7bc7b355d76c10c6610d33e39ef5bc8 Meyrelles <nuno.de.meireles@gmail.com> 1530014997 +0100	commit: Change backgroud color by type of transaction.
+ddc5bbbac7bc7b355d76c10c6610d33e39ef5bc8 c4730cf118a2d0a3ffbc49873ec2b1098271431d Meyrelles <nuno.de.meireles@gmail.com> 1530043644 +0100	commit: Correct Scott and Shirley issues.
+c4730cf118a2d0a3ffbc49873ec2b1098271431d 3457777bc2cbcd73bd60dd0db748709cdb7909e3 Meyrelles <nuno.de.meireles@gmail.com> 1530143382 +0100	commit: Update the update and delete transactions to keep the old records.
+3457777bc2cbcd73bd60dd0db748709cdb7909e3 746d9827d17eff08017fea5ad1e90702361df236 Meyrelles <nuno.de.meireles@gmail.com> 1530274210 +0100	commit: Create settings to change password
+746d9827d17eff08017fea5ad1e90702361df236 847d534b09e152cd33ae7d6c1908ba719b83ae67 Meyrelles <nuno.de.meireles@gmail.com> 1530274280 +0100	commit: Change name classifications to categories
+847d534b09e152cd33ae7d6c1908ba719b83ae67 06af5c914587ce0f618a2e172326270bd7eff95c Meyrelles <nuno.de.meireles@gmail.com> 1530274310 +0100	commit: Create user settings page
+06af5c914587ce0f618a2e172326270bd7eff95c a0fd05abe41d49369120f86946c2312a6f44c116 Meyrelles <nuno.de.meireles@gmail.com> 1530275934 +0100	commit: Update coffeescript
+a0fd05abe41d49369120f86946c2312a6f44c116 8bc15aca73f397a6e25cadd87ea3d4c7ab2a4497 Meyrelles <nuno.de.meireles@gmail.com> 1530370396 +0100	commit: Implemented Rethinkdb secure access
+8bc15aca73f397a6e25cadd87ea3d4c7ab2a4497 36e6514888eb5424f3457448324b7cb33edc93ce Meyrelles <nuno.de.meireles@gmail.com> 1530414231 +0100	commit: Function to create categories in trasaction form
+36e6514888eb5424f3457448324b7cb33edc93ce c096eb9fb8ebc1f0453d4069d850e20453a5f0af Meyrelles <nuno.de.meireles@gmail.com> 1530483747 +0100	commit: Setup an administration page to run rethinkdb queries
+c096eb9fb8ebc1f0453d4069d850e20453a5f0af 987a33ae04e370b1f486f8e8bb81da733994e400 Meyrelles <nuno.de.meireles@gmail.com> 1530553690 +0100	commit: Setup default currencies by user
+987a33ae04e370b1f486f8e8bb81da733994e400 45711c8f559ca01a95d8321dbd6909202836acf9 Meyrelles <nuno.de.meireles@gmail.com> 1530731753 +0100	commit: User categories defaults
+45711c8f559ca01a95d8321dbd6909202836acf9 9fdb0612552deefcb2341402d8a2aac0d297b3c7 Meyrelles <nuno.de.meireles@gmail.com> 1530802845 +0100	commit: Json API's
+9fdb0612552deefcb2341402d8a2aac0d297b3c7 b14831ee260d19fadcf27eb4d5214b6210b51b02 Meyrelles <nuno.de.meireles@gmail.com> 1530936784 +0100	commit: Setup app balances report
+b14831ee260d19fadcf27eb4d5214b6210b51b02 587e03543ed37fa83c902fe68363dc84bd3607dd Meyrelles <nuno.de.meireles@gmail.com> 1531010483 +0100	commit: Api currencies rate update and rates applyed to treasury balance
+587e03543ed37fa83c902fe68363dc84bd3607dd ff09ff84fa233e25980f48d22eac836945a01036 Meyrelles <nuno.de.meireles@gmail.com> 1531089697 +0100	commit: Reporting coinbags balance
+ff09ff84fa233e25980f48d22eac836945a01036 f6ad14842f4110d991b01e4aee0b18a0b328c1b9 meyrelles <nuno.de.meireles@gmail.com> 1531354614 +0100	commit: Migration for another workstation
+f6ad14842f4110d991b01e4aee0b18a0b328c1b9 87b6d678bf12d1a19171dfd52e5fc45a0e726e15 meyrelles <nuno.de.meireles@gmail.com> 1531435456 +0100	commit: Reports EUR and USD grand total
+87b6d678bf12d1a19171dfd52e5fc45a0e726e15 616acbf0a5fd84b3038be6d601a6f9a3f5937a3e meyrelles <nuno.de.meireles@gmail.com> 1531514482 +0100	commit: Approve transaction process
+616acbf0a5fd84b3038be6d601a6f9a3f5937a3e 5ec6669e82794ce385ce1799e93e054e213c5671 meyrelles <nuno.de.meireles@gmail.com> 1531515834 +0100	commit: Approve transactions process
+5ec6669e82794ce385ce1799e93e054e213c5671 2339a6217679b641be723d4c1b199cf488b28e02 meyrelles <nuno.de.meireles@gmail.com> 1531568618 +0100	commit: Change html styles and list Unapproved transactions
+2339a6217679b641be723d4c1b199cf488b28e02 9acb77d7c0824ff75f135715ea4c3b4df51ba9f8 meyrelles <nuno.de.meireles@gmail.com> 1531862340 +0100	commit: Approve transactions sub-process updated
+9acb77d7c0824ff75f135715ea4c3b4df51ba9f8 a4ce4d13061d2af9910c0515ad3fa193345f159a meyrelles <nuno.de.meireles@gmail.com> 1531870570 +0100	commit: Approve transactions sub-process updated
+a4ce4d13061d2af9910c0515ad3fa193345f159a 549bff83cd4a917d883ea4f87add857ce675291f meyrelles <nuno.de.meireles@gmail.com> 1532222043 +0100	commit: Miner dashboard process setup
+549bff83cd4a917d883ea4f87add857ce675291f b6e8ba5b75e62ee0b4708ff4116e21c7b177f68e meyrelles <nuno.de.meireles@gmail.com> 1532222261 +0100	commit: Render jSon data when retrive big data from server, increasing the tables data loading speed like transactions.
+b6e8ba5b75e62ee0b4708ff4116e21c7b177f68e b8cc5b61952ab9ea00339238b1ed4fa97f7184c7 meyrelles <nuno.de.meireles@gmail.com> 1533037740 +0100	commit: DataTables setup.
+b8cc5b61952ab9ea00339238b1ed4fa97f7184c7 b1cab6a91f58fb6d1e776159ab948a5a93feb33d meyrelles <nuno.de.meireles@gmail.com> 1533064615 +0100	commit: Config dataTables
+b1cab6a91f58fb6d1e776159ab948a5a93feb33d 7076d46ac7018353a9a3985d40bbf02d9f35a750 meyrelles <nuno.de.meireles@gmail.com> 1533213908 +0100	commit: Javascript refresh update
+7076d46ac7018353a9a3985d40bbf02d9f35a750 944a090c61f77153ac1b82c7ae663254c1f502af meyrelles <nuno.de.meireles@gmail.com> 1533222614 +0100	commit: Clean comments
+944a090c61f77153ac1b82c7ae663254c1f502af eb7ba9b01d04ef6363f7f8a5329d52875abdf3f6 meyrelles <nuno.de.meireles@gmail.com> 1533307159 +0100	commit: Beta tester issues has been solved
+eb7ba9b01d04ef6363f7f8a5329d52875abdf3f6 7033d96b5919b5457d79cf58eb6aa0a80cd7bde4 meyrelles <nuno.de.meireles@gmail.com> 1534333074 +0100	commit: Update SMTP to email alerts from app
+7033d96b5919b5457d79cf58eb6aa0a80cd7bde4 79998fbe3504b4d300a855802dce79f4d2a3d740 meyrelles <nuno.de.meireles@gmail.com> 1534352040 +0100	commit: Option to see balances by member/team
+79998fbe3504b4d300a855802dce79f4d2a3d740 6a3b0a347de76ae747f6893a0dc285fd017ebcf5 meyrelles <nuno.de.meireles@gmail.com> 1534431043 +0100	commit: developed balances by category table.
+6a3b0a347de76ae747f6893a0dc285fd017ebcf5 d0729140838eda39081f0e42a16a6685759476a1 meyrelles <nuno.de.meireles@gmail.com> 1534432291 +0100	commit: API to update treasury page in website are updated
+d0729140838eda39081f0e42a16a6685759476a1 3802e1fd29a778dad8fa7a7dbd30ba91731bee81 meyrelles <nuno.de.meireles@gmail.com> 1535208005 +0100	commit: Issue reported by Spencer has been corrected. Ajax script updated to validate the required fields.
+3802e1fd29a778dad8fa7a7dbd30ba91731bee81 d1f317427af0436992ab2b5f8f5fa2d6fe064e3e meyrelles <nuno.de.meireles@gmail.com> 1535213439 +0100	commit: Inserted status field in users table to filter Inactive users
+d1f317427af0436992ab2b5f8f5fa2d6fe064e3e 0835452fbe2b7f0d5750e7e151e3fc54284ca18e meyrelles <nuno.de.meireles@gmail.com> 1535213634 +0100	commit: Verify if the user staus is Active
+0835452fbe2b7f0d5750e7e151e3fc54284ca18e b4872a206738ee278cd10aa74ce31de8cb42f41f meyrelles <nuno.de.meireles@gmail.com> 1535217091 +0100	commit: Need to refresh to activate buttons.
+b4872a206738ee278cd10aa74ce31de8cb42f41f 6244d58240df03a18e72ca5d121bf28828f6ae43 meyrelles <nuno.de.meireles@gmail.com> 1536837199 +0100	commit: Help updated
+6244d58240df03a18e72ca5d121bf28828f6ae43 69bebec8fe08c1c560dd9e56b594b59e9bdc4e91 meyrelles <nuno.de.meireles@gmail.com> 1536837230 +0100	commit: User session updates
+69bebec8fe08c1c560dd9e56b594b59e9bdc4e91 e807ad42808575cc4f2eee66cdb7868abd6f2a91 meyrelles <nuno.de.meireles@gmail.com> 1536837258 +0100	commit: Help updated
+e807ad42808575cc4f2eee66cdb7868abd6f2a91 1dcb9d352bd2efb8dcc3f2bb07808fd1d05d1179 meyrelles <nuno.de.meireles@gmail.com> 1536837483 +0100	commit: Setup production app
+1dcb9d352bd2efb8dcc3f2bb07808fd1d05d1179 88b1ab83a61dd4783f8e8981487578f19914ba33 meyrelles <nuno.de.meireles@gmail.com> 1537285953 +0100	commit: Updated ruby gems
+88b1ab83a61dd4783f8e8981487578f19914ba33 4af8701cbc072679318cdd3b9f18e8e314db7eb0 meyrelles <nuno.de.meireles@gmail.com> 1537285973 +0100	commit: Updated users guide
+4af8701cbc072679318cdd3b9f18e8e314db7eb0 9713ae3972d6933114337090131164f9d99899d8 meyrelles <nuno.de.meireles@gmail.com> 1537286009 +0100	commit: Creating adminestrator global settings
+9713ae3972d6933114337090131164f9d99899d8 5901ba31315217d39833ee6192ffb46fa17aa595 meyrelles <nuno.de.meireles@gmail.com> 1537372940 +0100	commit: User groups functionaty
+5901ba31315217d39833ee6192ffb46fa17aa595 dcc60ce8b7bc016590c923a722bc6207b27407b9 meyrelles <nuno.de.meireles@gmail.com> 1537382241 +0100	commit: Setup Users group functionality
